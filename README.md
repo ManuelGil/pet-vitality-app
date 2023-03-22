@@ -1,5 +1,9 @@
 # PetVitality
 
+[![GitHub Release](https://img.shields.io/github/v/release/ManuelGil/pet-vitality-app)](https://github.com/ManuelGil/pet-vitality-app/releases/tag/v0.1.0)
+[![GitHub Release Date](https://img.shields.io/github/release-date/ManuelGil/pet-vitality-app)](https://github.com/ManuelGil/pet-vitality-app/releases/tag/v0.1.0)
+[![GitHub license](https://img.shields.io/github/license/ManuelGil/pet-vitality-app)](./LICENSE)
+
 PetVitality is a web-based application designed to manage veterinary products and services in veterinary clinics. The app allows clinics to manage appointments, clients, patients, medical records, and billing in an organized and centralized manner.
 
 ## Requirements
@@ -22,7 +26,7 @@ Issues and feature requests can be reported through GitHub Tracker. In addition,
 
 ## Credits
 
-PetVitality is a project developed and maintained by [team name or community].
+PetVitality is a project developed and maintained by [Manuel Gil](https://github.com/ManuelGil).
 
 ## License
 
