@@ -1,6 +1,6 @@
-import { Appointment, Pet, User } from '@app/database';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Appointment, Pet, User } from '../src';
 
 export default class AppointmentSeeder implements Seeder {
   public async run(

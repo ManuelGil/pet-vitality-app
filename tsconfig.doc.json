@@ -1,9 +1,0 @@
-{
-  "include": ["src/**/*.ts", "libs/**/*.ts"],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*spec.ts",
-    "libs/database/migrations/*"
-  ]
-}

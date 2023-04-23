@@ -1,8 +1,7 @@
-import { User } from '@app/database';
 import { hash } from 'bcrypt';
-import { UserRole } from 'src/app.roles';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { User, UserRole } from '../src';
 
 export default class UserSeeder implements Seeder {
   public async run(

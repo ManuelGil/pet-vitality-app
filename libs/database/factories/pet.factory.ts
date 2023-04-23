@@ -1,5 +1,5 @@
-import { Pet, PetGender } from '@app/database';
 import { setSeederFactory } from 'typeorm-extension';
+import { Pet, PetGender } from '../src';
 
 export default setSeederFactory(Pet, async (faker) => {
   const pet = new Pet();

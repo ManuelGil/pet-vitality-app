@@ -1,5 +1,16 @@
-# Created by https://www.toptal.com/developers/gitignore/api/dotenv,node,yarn,visualstudiocode,sublimetext,intellij+all,webstorm+all,executable,linux,windows,macos
-# Edit at https://www.toptal.com/developers/gitignore?templates=dotenv,node,yarn,visualstudiocode,sublimetext,intellij+all,webstorm+all,executable,linux,windows,macos
+# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database
+
+### Database ###
+postgres_data
+*.accdb
+*.db
+*.dbf
+*.mdb
+*.pdb
+*.sqlite3
+*.db-shm
+*.db-wal
 
 ### dotenv ###
 .env
@@ -162,6 +173,16 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -290,6 +311,19 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
+
+### react ###
+.DS_*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+
+*.sublime*
+
+psd
+thumb
+sketch
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -441,4 +475,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/dotenv,node,yarn,visualstudiocode,sublimetext,intellij+all,webstorm+all,executable,linux,windows,macos
+# End of https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database

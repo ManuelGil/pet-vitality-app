@@ -1,5 +1,5 @@
-import { Procedure } from '@app/database';
 import { setSeederFactory } from 'typeorm-extension';
+import { Procedure } from '../src';
 
 export default setSeederFactory(Procedure, (faker) => {
   const procedure = new Procedure();

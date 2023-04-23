@@ -1,6 +1,6 @@
-import { Client } from '@app/database';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Client } from '../src';
 
 export default class ClientSeeder implements Seeder {
   public async run(

@@ -1,6 +1,6 @@
-import { Client, Pet } from '@app/database';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Client, Pet } from '../src';
 
 export default class PetSeeder implements Seeder {
   public async run(

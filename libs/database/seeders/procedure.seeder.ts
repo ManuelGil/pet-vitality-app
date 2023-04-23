@@ -1,6 +1,6 @@
-import { Pet, Procedure, ProcedureCategory } from '@app/database';
 import { DataSource } from 'typeorm';
 import { Seeder, SeederFactoryManager } from 'typeorm-extension';
+import { Pet, Procedure, ProcedureCategory } from '../src';
 
 export default class ProcedureSeeder implements Seeder {
   public async run(

@@ -1,5 +1,5 @@
-import { Appointment } from '@app/database';
 import { setSeederFactory } from 'typeorm-extension';
+import { Appointment } from '../src';
 
 export default setSeederFactory(Appointment, (faker) => {
   const appointment = new Appointment();

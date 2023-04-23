@@ -1,5 +1,5 @@
-import { ProcedureCategory } from '@app/database';
 import { setSeederFactory } from 'typeorm-extension';
+import { ProcedureCategory } from '../src';
 
 export default setSeederFactory(ProcedureCategory, (faker) => {
   const category = new ProcedureCategory();
