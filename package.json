@@ -24,6 +24,10 @@
   "scripts": {
     "dev:api": "nx serve api",
     "dev:web": "nx serve web",
+    "make:migration": "nx run database:mig-gen",
+    "make:seed": "nx run database:seed",
+    "migrate:run": "nx run database:mig-run",
+    "migrate:revert": "nx run database:mig-rev",
     "prepare": "husky install"
   },
   "dependencies": {

@@ -21,7 +21,7 @@ export const options = {
   retryDelay: process.env.DATABASE_RETRY_DELAY,
   autoLoadEntities: true,
   synchronize: false,
-  entities: [__dirname + '/../libs/database/src/entities/**/*.entity.ts'],
+  entities: [__dirname + '/../libs/database/src/lib/entities/**/*.entity.ts'],
   migrationsTableName: 'migrations',
   migrations: [__dirname + '/../libs/database/migrations/**/*.ts'],
   seeds: [InitSeeder],

@@ -24,6 +24,46 @@
           "codeCoverage": true
         }
       }
+    },
+    "typeorm": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "ts-node --project tsconfig.lib.json ../../node_modules/typeorm/cli -d ../../config/orm.config.ts",
+        "cwd": "libs/database"
+      }
+    },
+    "mig-gen": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run database:typeorm migration:generate --pretty migrations/{args.name}",
+        "cwd": "libs/database"
+      }
+    },
+    "mig-run": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run database:typeorm migration:run",
+        "cwd": "libs/database"
+      }
+    },
+    "mig-rev": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "nx run database:typeorm migration:revert",
+        "cwd": "libs/database"
+      }
+    },
+    "seed": {
+      "executor": "nx:run-commands",
+      "outputs": [],
+      "options": {
+        "command": "ts-node --project tsconfig.lib.json ../../node_modules/typeorm-extension/dist/cli/index.js seed -d ../../config/orm.config.ts",
+        "cwd": "libs/database"
+      }
     }
   },
   "tags": []
