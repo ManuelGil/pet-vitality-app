@@ -1,5 +1,14 @@
+import {
+  Appointment,
+  Client,
+  DatabaseModule,
+  Pet,
+  Procedure,
+  ProcedureCategory,
+  User,
+} from '@app/database';
 import { Module } from '@nestjs/common';
-import { ConfigModule, ConfigService } from '@nestjs/config';
+import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 
 import * as Joi from 'joi';
@@ -30,12 +39,15 @@ import { UsersModule } from './users/users.module';
         DATABASE_RETRY_DELAY: Joi.number().default(3000).optional(),
       }),
     }),
-    TypeOrmModule.forRootAsync({
-      inject: [ConfigService],
-      useFactory: (configService: ConfigService) => ({
-        ...configService.get('database'),
-      }),
-    }),
+    DatabaseModule,
+    TypeOrmModule.forFeature([
+      Appointment,
+      Client,
+      Pet,
+      Procedure,
+      ProcedureCategory,
+      User,
+    ]),
     UsersModule,
   ],
   controllers: [],
