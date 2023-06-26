@@ -28,6 +28,7 @@
     "make:seed": "nx run database:seed",
     "migrate:run": "nx run database:mig-run",
     "migrate:revert": "nx run database:mig-rev",
+    "clear:db": "nx run database:clear",
     "prepare": "husky install"
   },
   "dependencies": {
