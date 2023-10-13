@@ -1,8 +1,39 @@
-# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database
+# Created by https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,dotenv,windows,database,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,angular
+# Edit at https://www.toptal.com/developers/gitignore?templates=node,yarn,linux,macos,dotenv,windows,database,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,angular
+
+### Angular ###
+## Angular ##
+# compiled output
+dist/
+tmp/
+app/**/*.js
+app/**/*.js.map
+
+# dependencies
+node_modules/
+bower_components/
+
+# IDEs and editors
+.idea/
+
+# misc
+.sass-cache/
+connect.lock/
+coverage/
+libpeerconnection.log/
+npm-debug.log
+testem.log
+typings/
+.angular/
+
+# e2e
+e2e/*.js
+e2e/*.map
+
+# System Files
+.DS_Store/
 
 ### Database ###
-postgres_data
 *.accdb
 *.db
 *.dbf
@@ -173,16 +204,6 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
@@ -215,7 +236,6 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -311,19 +331,6 @@ dist
 
 # SvelteKit build / generate output
 .svelte-kit
-
-### react ###
-.DS_*
-**/*.backup.*
-**/*.back.*
-
-node_modules
-
-*.sublime*
-
-psd
-thumb
-sketch
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -475,4 +482,4 @@ $RECYCLE.BIN/
 # and uncomment the following lines
 # .pnp.*
 
-# End of https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,react,dotenv,windows,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,database
+# End of https://www.toptal.com/developers/gitignore/api/node,yarn,linux,macos,dotenv,windows,database,executable,sublimetext,intellij+all,webstorm+all,visualstudiocode,angular
