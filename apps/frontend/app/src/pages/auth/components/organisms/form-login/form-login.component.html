@@ -1,0 +1,17 @@
+<form
+  [formGroup]="formLogin"
+  (ngSubmit)="onSubmit()"
+  class="w-full flex flex-col gap-6 items-center"
+>
+  <div class="flex flex-col justify-center gap-4 items-center">
+    <!-- <c-title css="title-2xl">Login</c-title> -->
+    <div class="w-full flex flex-col gap-4">
+      <div class="relative"></div>
+      <div class="relative"></div>
+      <a class="underline" routerLink="/auth/recover">
+        have you forgotten your password ?
+      </a>
+    </div>
+    <div class="relative w-full"></div>
+  </div>
+</form>

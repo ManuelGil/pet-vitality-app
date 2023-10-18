@@ -1,0 +1,17 @@
+.text-custom {
+  @apply text-secondary-dark;
+}
+
+.active,
+.login-active {
+  @apply border-b-4 border-blue-700 font-bold;
+}
+
+.login-active {
+  @apply rounded-l-md;
+}
+
+.main-style {
+  border-bottom: 10px solid var(--indie-creator-yellow);
+  border-top: 10px solid var(--angular-dark-purple);
+}

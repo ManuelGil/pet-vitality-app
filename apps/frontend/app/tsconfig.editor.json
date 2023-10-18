@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json",
+  "include": ["src/**/*.ts", "common/types/auth/index.ts"],
+  "compilerOptions": {
+    "types": ["jest", "node"]
+  }
+}
