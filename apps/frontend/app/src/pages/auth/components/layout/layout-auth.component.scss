@@ -1,0 +1,7 @@
+.text-custom {
+  @apply text-secondary-dark;
+}
+
+.active {
+  @apply flex justify-center p-4 bg-blue-200 rounded-md font-bold text-blue-700;
+}
